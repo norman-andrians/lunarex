@@ -1,0 +1,46 @@
+:root {
+    --wallpaper-image: url(../wallpaper-images/676485.jpg);
+    --wallpaper-scale: .4;
+    --wallpaper-blur: 20px;
+
+    --background-scale: 1.4;
+}
+
+.main-background {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: scale(var(--background-scale));
+}
+.bg-blur {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(var(--wallpaper-blur));
+}
+.head-wallpaper {
+    width: calc(1920px * var(--wallpaper-scale));
+    height: calc(1080px * var(--wallpaper-scale));
+    border-radius: 20px;
+}
+
+.bg-img {
+    background-image: var(--wallpaper-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-top {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+.text-bottom {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -50%);
+}

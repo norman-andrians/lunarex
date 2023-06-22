@@ -1,1 +1,12 @@
-@import './wallpaper.css'
+@import './reset.css';
+@import './utilities.css';
+@import './wallpaper.css';
+
+body {
+    margin: 0;
+}
+main.main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}

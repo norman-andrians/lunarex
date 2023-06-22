@@ -1,0 +1,24 @@
+
+
+.centered {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+.text-white { color: white; }
+
+.text-center { text-align: center; }
+
+.text-2xl { font-size: 2rem; }
+.text-3xl { font-size: 2.25em; }
+.text-4xl { font-size: 2.5rem; }
+.text-5xl { font-size: 3rem; }
+
+.font-roboto { font-family: 'Roboto', sans-serif; }
+.font-open-sans { font-family: 'Open Sans', sans-serif; }
+.font-noto-sans { font-family: 'Noto Sans', sans-serif; }
+.font-montserrat { font-family: 'Montserrat', sans-serif; }
+
+.font-normal { font-weight: normal; }
+.font-bold { font-weight: bold; }

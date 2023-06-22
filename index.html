@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lunarex - Wallpaper Engine</title>
+    <link rel="stylesheet" href="./assets/styles/main.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="main-background">
-        <div class="head-wallpaper"></div>
+    <main class="main">
+        <div class="main-background bg-img"><div class="bg-blur"></div></div>
+        <div>
+            <header class="text-top text-white text-4xl">
+                <h1 class="font-open-sans font-bold" id="time-clock">12:40</h1>
+            </header>
+            <div class="head-wallpaper bg-img centered"></div>
+            <header class="text-bottom text-white text-center">
+                <h1 class="font-montserrat font-normal text-5xl">LUNAREX</h1>
+                <p class="font-open-sans">free and open-source web-based wallpaper engine</p>
+            </header>
+        </div>
     </main>
+    <script src="./assets/scripts/app.js"></script>
 </body>
 </html>
