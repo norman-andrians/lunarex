@@ -1,6 +1,7 @@
 const rootvar = document.querySelector(":root");
 
 const clock = document.getElementById("time-clock");
+const datel = document.getElementById("time-date");
 const background = document.querySelector(".main-background");
 
 function getTime() {
@@ -13,6 +14,12 @@ function getTime() {
     m = m < 10 ? "0" + m : m;
 
     return `${h}:${m}`
+}
+
+function getDate() {
+    const date = new Date();
+
+    return date.toDateString();
 }
 
 window.addEventListener('mousemove', (e) => {
@@ -28,3 +35,5 @@ window.addEventListener('mousemove', (e) => {
 setInterval(() => {
     clock.textContent = getTime();
 }, 100);
+
+datel.textContent = getDate();
