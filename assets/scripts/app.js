@@ -1,8 +1,4 @@
-const rootvar = document.querySelector(":root");
-
-const clock = document.getElementById("time-clock");
-const datel = document.getElementById("time-date");
-const background = document.querySelector(".main-background");
+const rootvar = $(":root");
 
 function getTime() {
     const date = new Date();
@@ -22,18 +18,20 @@ function getDate() {
     return date.toDateString();
 }
 
-window.addEventListener('mousemove', (e) => {
+$(document).on('mousemove', (e) => {
     const decrease = 20;
-    const scale = parseFloat(getComputedStyle(rootvar).getPropertyValue('--background-scale'));
+    const scale = parseFloat(rootvar.css('--background-scale'));
 
-    const x = ((window.innerWidth / 2) - e.pageX) / decrease;
-    const y = ((window.innerHeight / 2) - e.pageY) / decrease;
+    const x = ((this.innerWidth / 2) - e.pageX) / decrease;
+    const y = ((this.innerHeight / 2) - e.pageY) / decrease;
 
-    background.style.transform = `translate(${x}px, ${y}px) scale(${scale})`;
+    // console.log(`background offset = ${x}, ${y}`);
+
+    $(".main-background").css('transform', `translate(${x}px, ${y}px) scale(${scale})`);
 });
 
 setInterval(() => {
-    clock.textContent = getTime();
+    $("#time-clock").text(getTime());
 }, 100);
 
-datel.textContent = getDate();
+$("#time-date").text(getDate());
