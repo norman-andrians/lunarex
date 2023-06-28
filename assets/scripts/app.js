@@ -9,7 +9,7 @@ function getTime() {
     h = h < 10 ? "0" + h : h;
     m = m < 10 ? "0" + m : m;
 
-    return `${h}:${m}`
+    return `${h}:${m}`;
 }
 
 function getDate() {
@@ -18,6 +18,7 @@ function getDate() {
     return date.toDateString();
 }
 
+// aka: window.addEventListener('mousemove', (e) => {...})
 $(document).on('mousemove', (e) => {
     const decrease = 20;
     const scale = parseFloat(rootvar.css('--background-scale'));

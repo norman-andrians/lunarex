@@ -3,7 +3,9 @@
     --wallpaper-scale: .4;
     --wallpaper-blur: 20px;
 
+    --background-black-opacity: .2;
     --background-scale: 1.4;
+    --background-border: 1px #9eaad033 solid;
 }
 
 .main-background {
@@ -18,12 +20,15 @@
     top: 0;
     width: 100vw;
     height: 100vh;
+    background-color: rgba(0, 0, 0, var(--background-black-opacity));
     backdrop-filter: blur(var(--wallpaper-blur));
 }
 .head-wallpaper {
     width: calc(1920px * var(--wallpaper-scale));
     height: calc(1080px * var(--wallpaper-scale));
+    border: var(--background-border);
     border-radius: 20px;
+    z-index: 1;
 }
 
 .bg-img {
@@ -43,4 +48,44 @@
     left: 50%;
     bottom: 6%;
     transform: translate(-50%, -50%);
+}
+
+
+.side-options {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 140px;
+    top: 20px;
+    left: -140px;
+    z-index: -10;
+}
+.side-item {
+    background-color: rgb(30, 33, 44);
+    color: rgba(158, 170, 208, 0);
+    padding: 12px 16px;
+    font-size: 14px;
+    border: var(--background-border);
+    border-width: 1px 0 1px 1px;
+    border-radius: 6px 0 0 6px;
+    overflow-x: hidden;
+    margin-left: auto;
+    margin-bottom: 10px;
+    width: 35%;
+    transition: .3s all;
+}
+.side-col {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    width: 150px;
+}
+.side-item:hover {
+    width: 100%;
+    background-color: rgb(39, 43, 58);
+    color: rgba(158, 170, 208, 1);
+}
+.side-item svg {
+    margin-right: 8px;
+    font-size: 16px;
 }
