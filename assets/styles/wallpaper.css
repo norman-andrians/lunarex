@@ -5,7 +5,20 @@
 
     --background-black-opacity: .2;
     --background-scale: 1.4;
-    --background-border: 1px #9eaad033 solid;
+
+    --dark-background: rgb(30, 33, 44);
+    --dark-border: 1px #9eaad033 solid;
+    --dark-text: rgba(158, 170, 208, 1);
+    --dark-text-hidden: rgba(158, 170, 208, 0);
+    --dark-btn-secondary-hover: rgb(39, 43, 58);
+
+    --ui-background: var(--dark-background);
+    --ui-border: var(--dark-border);
+    --ui-text: var(--dark-text);
+    --ui-text-hidden: var(--dark-text-hidden);
+    --ui-btn-primary: rgb();
+    --ui-btn-secondary: var(--ui-background);
+    --ui-btn-secondary-hover: var(--dark-btn-secondary-hover);
 }
 
 .main-background {
@@ -26,7 +39,7 @@
 .head-wallpaper {
     width: calc(1920px * var(--wallpaper-scale));
     height: calc(1080px * var(--wallpaper-scale));
-    border: var(--background-border);
+    border: var(--ui-border);
     border-radius: 20px;
     z-index: 1;
 }
@@ -61,11 +74,11 @@
     z-index: -10;
 }
 .side-item {
-    background-color: rgb(30, 33, 44);
-    color: rgba(158, 170, 208, 0);
+    background-color: var(--ui-background);
+    color: var(--ui-text-hidden);
     padding: 12px 16px;
     font-size: 14px;
-    border: var(--background-border);
+    border: var(--ui-border);
     border-width: 1px 0 1px 1px;
     border-radius: 6px 0 0 6px;
     overflow-x: hidden;
@@ -82,8 +95,8 @@
 }
 .side-item:hover {
     width: 100%;
-    background-color: rgb(39, 43, 58);
-    color: rgba(158, 170, 208, 1);
+    background-color: var(--ui-btn-secondary-hover);
+    color: var(--ui-text);
 }
 .side-item svg {
     margin-right: 8px;
