@@ -1,5 +1,5 @@
 :root {
-    --wallpaper-image: url(../wallpaper-images/676485.jpg);
+    --wallpaper-image: url(../wallpaper-images/128387.png);
     --wallpaper-scale: .4;
     --wallpaper-blur: 20px;
 
@@ -77,7 +77,7 @@
     background-color: var(--ui-background);
     color: var(--ui-text-hidden);
     padding: 12px 16px;
-    font-size: 14px;
+    font-size: 12px;
     border: var(--ui-border);
     border-width: 1px 0 1px 1px;
     border-radius: 6px 0 0 6px;
@@ -99,6 +99,6 @@
     color: var(--ui-text);
 }
 .side-item svg {
-    margin-right: 8px;
+    margin-right: 12px;
     font-size: 16px;
 }
