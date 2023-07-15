@@ -1,0 +1,13 @@
+@import './reset.scss';
+@import './fonts.scss';
+@import './utilities.scss';
+@import './wallpaper.scss';
+
+body {
+    margin: 0;
+}
+main.main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}

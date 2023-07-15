@@ -1,0 +1,104 @@
+:root {
+    --wallpaper-image: url(../wallpaper-images/128387.png);
+    --wallpaper-scale: .4;
+    --wallpaper-blur: 20px;
+
+    --background-black-opacity: .2;
+    --background-scale: 1.4;
+
+    --dark-background: rgb(30, 33, 44);
+    --dark-border: 1px #9eaad033 solid;
+    --dark-text: rgba(158, 170, 208, 1);
+    --dark-text-hidden: rgba(158, 170, 208, 0);
+    --dark-btn-secondary-hover: rgb(39, 43, 58);
+
+    --ui-background: var(--dark-background);
+    --ui-border: var(--dark-border);
+    --ui-text: var(--dark-text);
+    --ui-text-hidden: var(--dark-text-hidden);
+    --ui-btn-primary: rgb();
+    --ui-btn-secondary: var(--ui-background);
+    --ui-btn-secondary-hover: var(--dark-btn-secondary-hover);
+}
+
+.main-background {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: scale(var(--background-scale));
+}
+.bg-blur {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, var(--background-black-opacity));
+    backdrop-filter: blur(var(--wallpaper-blur));
+}
+.head-wallpaper {
+    width: calc(1920px * var(--wallpaper-scale));
+    height: calc(1080px * var(--wallpaper-scale));
+    border: var(--ui-border);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.bg-img {
+    background-image: var(--wallpaper-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-top {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+}
+.text-bottom {
+    position: absolute;
+    left: 50%;
+    bottom: 6%;
+    transform: translate(-50%, -50%);
+}
+
+
+.side-options {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 140px;
+    top: 20px;
+    left: -140px;
+    z-index: -10;
+}
+.side-item {
+    background-color: var(--ui-background);
+    color: var(--ui-text-hidden);
+    padding: 12px 16px;
+    font-size: 12px;
+    border: var(--ui-border);
+    border-width: 1px 0 1px 1px;
+    border-radius: 6px 0 0 6px;
+    overflow-x: hidden;
+    margin-left: auto;
+    margin-bottom: 10px;
+    width: 35%;
+    transition: .3s all;
+}
+.side-col {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    width: 150px;
+}
+.side-item:hover {
+    width: 100%;
+    background-color: var(--ui-btn-secondary-hover);
+    color: var(--ui-text);
+}
+.side-item svg {
+    margin-right: 12px;
+    font-size: 16px;
+}
