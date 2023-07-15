@@ -1,0 +1,15 @@
+/* 
+basic configuration
+ */
+$wallpaper-image: url(../wallpaper-images/128387.png);
+$wallpaper-scale: .4;
+$wallpaper-blur: 20px;
+
+/* theme colors */
+$dark-blue: (
+    "background": rgb(7, 7, 7),
+    "border": 1px #9eaad033 solid,
+    "text": rgba(158, 170, 208, 1),
+    "text hidden": rgba(158, 170, 208, 0),
+    "dark btn secondary hover": rgb(39, 43, 58)
+);
