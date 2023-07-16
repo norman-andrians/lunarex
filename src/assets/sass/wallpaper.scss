@@ -1,16 +1,11 @@
 #main-background {
-    transform: scale($background-scale);
-}
-.bg-blur {
-    backdrop-filter: blur($wallpaper-blur);
+    /* transform: scale($background-scale); */
 }
 .head-wallpaper {
     width: calc(1920px * $wallpaper-scale);
     height: calc(1080px * $wallpaper-scale);
     border-radius: 20px;
-    z-index: 1;
 }
-
 .bg-img {
     background-image: var(--wallpaper-image);
     background-size: cover;

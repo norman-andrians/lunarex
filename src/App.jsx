@@ -7,7 +7,6 @@ import "./assets/sass/main.scss";
 export default function App() {
     return (
         <main
-            id="main-background"
             className="
                 bg-[url('../wallpaper-images/128387.png')]
                 w-screen
@@ -20,8 +19,7 @@ export default function App() {
                 after:w-full
                 after:h-full
                 after:backdrop-blur-xl
-            "
-        >
+        ">
             <Background />
             <MainWidget />
         </main>

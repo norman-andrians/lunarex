@@ -7,8 +7,16 @@ import GearIcon from "../icons/gear.svg";
 
 function BackgroundPanel() {
     return (
-        <div className="head-wallpaper bg-img centered">
-            <div className="side-options font-open-sans text-white">
+        <div className="
+            head-wallpaper
+            bg-img
+            z-10
+            mx-auto
+        ">
+            <div className="
+                font-open-sans
+                text-white
+            ">
                 <SideItem
                     name="Wallpaper"
                     icon={ ImageIcon }

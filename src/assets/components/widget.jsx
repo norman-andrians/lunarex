@@ -5,7 +5,15 @@ import BackgroundPanel from "./panel";
 
 function MainWidget() {
     return (
-        <div className="flex flex-col">
+        <div className="
+            absolute
+            inset-0
+            m-auto
+            flex
+            flex-col
+            justify-center
+            gap-10
+        ">
             <TimeClock />
             <BackgroundPanel />
             <FootHeader />
