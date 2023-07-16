@@ -1,14 +1,29 @@
 import React from "react";
 import Background from "./assets/components/background";
-import PanelBackground from "./assets/components/panel";
+import MainWidget from "./assets/components/widget";
 import "./assets/css/output.css";
 import "./assets/sass/main.scss";
 
 export default function App() {
     return (
-        <main id="main">
+        <main
+            id="main-background"
+            className="
+                bg-[url('../wallpaper-images/128387.png')]
+                w-screen
+                h-screen
+                overflow-hidden
+                after:content-['']
+                after:absolute
+                after:top-0
+                after:left-0
+                after:w-full
+                after:h-full
+                after:backdrop-blur-xl
+            "
+        >
             <Background />
-            <PanelBackground />
+            <MainWidget />
         </main>
     )
 }
