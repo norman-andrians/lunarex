@@ -1,6 +1,7 @@
 import React from "react";
 import Background from "./assets/components/background";
-import "./assets/styles/main.scss";
+import "./assets/css/output.css";
+import "./assets/sass/main.scss";
 import ImageIcon from "./assets/icons/image.svg";
 import GameIcon from "./assets/icons/gamepad.svg";
 import CodeIcon from "./assets/icons/code.svg";
@@ -11,8 +12,8 @@ export default function App() {
         <main id="main">
             <Background />
             <div>
-                <header className="text-top text-white text-center">
-                    <h1 className="font-open-sans font-bold text-5xl" id="time-clock">12:00</h1>
+                <header className="text-white text-center">
+                    <h1 className="font-open-sans font-bold text-3xl" id="time-clock">12:00</h1>
                     <p className="font-roboto" id="time-date"></p>
                 </header>
                 <div className="head-wallpaper bg-img centered">
