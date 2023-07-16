@@ -12,10 +12,12 @@ function BackgroundPanel() {
             bg-img
             z-10
             mx-auto
+            relative
         ">
             <div className="
                 font-open-sans
                 text-white
+                side-options
             ">
                 <SideItem
                     name="Wallpaper"

@@ -6,9 +6,19 @@ export default function SideItem(props) {
     const target = props.target;
 
     return (
-        <button className="side-item">
+        <button className="
+            side-item
+            border
+            dark:bg-slate-800
+            dark:text-white
+            dark:border-slate-600
+        ">
             <div className="side-col">
-                <img src={ icon } alt={ name.toLowerCase() } />
+                <img
+                    className="me-4"
+                    src={ icon }
+                    alt={ name.toLowerCase() }
+                />
                 <div>{ name }</div>
             </div>
         </button>
