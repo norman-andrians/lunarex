@@ -10,7 +10,7 @@
     top: 0;
     width: 100vw;
     height: 100vh;
-    backdrop-filter: blur(var(--wallpaper-blur));
+    backdrop-filter: blur($wallpaper-blur);
 }
 .head-wallpaper {
     width: calc(1920px * $wallpaper-scale);
