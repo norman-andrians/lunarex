@@ -8,7 +8,7 @@ export default function App() {
     return (
         <main
             className="
-                bg-[url('../wallpaper-images/128387.png')]
+                relative
                 w-screen
                 h-screen
                 overflow-hidden

@@ -1,9 +1,9 @@
 import React from "react"
 import SideItem from "./button/sideitem";
-import ImageIcon from "../icons/image.svg";
-import GameIcon from "../icons/gamepad.svg";
-import CodeIcon from "../icons/code.svg";
-import GearIcon from "../icons/gear.svg";
+import { ReactComponent as ImageIcon } from "../icons/image.svg";
+import { ReactComponent as GameIcon } from "../icons/gamepad.svg";
+import { ReactComponent as CodeIcon } from "../icons/code.svg";
+import { ReactComponent as GearIcon } from "../icons/gear.svg";
 
 function BackgroundPanel() {
     return (
@@ -21,22 +21,22 @@ function BackgroundPanel() {
             ">
                 <SideItem
                     name="Wallpaper"
-                    icon={ ImageIcon }
+                    icon={ <ImageIcon /> }
                     target=""
                 />
                 <SideItem
                     name="Games"
-                    icon={ GameIcon }
+                    icon={ <GameIcon /> }
                     target=""
                 />
                 <SideItem
                     name="Dev Tools"
-                    icon={ CodeIcon }
+                    icon={ <CodeIcon /> }
                     target=""
                 />
                 <SideItem
                     name="Settings"
-                    icon={ GearIcon }
+                    icon={ <GearIcon /> }
                     target=""
                 />
             </div>

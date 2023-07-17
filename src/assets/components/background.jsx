@@ -2,7 +2,13 @@ import React from "react";
 
 function Background() {
     return (
-        <div className="main-background bg-img"></div>
+        <div className="
+            bg-img
+            bg-[url('../wallpaper-images/128387.png')]
+            w-full
+            h-full
+            relative
+        "></div>
     );
 }
 

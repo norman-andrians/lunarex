@@ -10,15 +10,11 @@ export default function SideItem(props) {
             side-item
             border
             dark:bg-slate-800
-            dark:text-white
+            dark:text-slate-400
             dark:border-slate-600
         ">
             <div className="side-col">
-                <img
-                    className="me-4"
-                    src={ icon }
-                    alt={ name.toLowerCase() }
-                />
+                <div className="me-4">{ props.icon }</div>
                 <div>{ name }</div>
             </div>
         </button>
