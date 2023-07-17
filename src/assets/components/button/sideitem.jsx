@@ -12,6 +12,7 @@ export default function SideItem(props) {
             dark:bg-slate-800
             dark:text-slate-400
             dark:border-slate-600
+            dark:bg-opacity-90
         ">
             <div className="side-col">
                 <div className="me-4">{ props.icon }</div>

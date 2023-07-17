@@ -23,6 +23,8 @@ export default function App() {
                 after:w-full
                 after:h-full
                 after:backdrop-blur-xl
+                after:bg-black
+                after:bg-opacity-40
         ">
             <Background
                 scale={1.4}
