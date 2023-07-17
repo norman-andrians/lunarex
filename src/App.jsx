@@ -4,7 +4,11 @@ import MainWidget from "./assets/components/widget";
 import "./assets/css/output.css";
 import "./assets/sass/main.scss";
 
+import WImage from "./assets/wallpaper-images/128387.png";
+
 export default function App() {
+    const wallpaperimg = WImage;
+
     return (
         <main
             className="
@@ -20,8 +24,13 @@ export default function App() {
                 after:h-full
                 after:backdrop-blur-xl
         ">
-            <Background />
-            <MainWidget />
+            <Background
+                scale={1.4}
+                image={wallpaperimg}
+                />
+            <MainWidget
+                image={wallpaperimg}
+            />
         </main>
     )
 }

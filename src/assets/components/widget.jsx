@@ -3,7 +3,7 @@ import TimeClock from "./timeclock";
 import FootHeader from "./foot";
 import BackgroundPanel from "./panel";
 
-function MainWidget() {
+function MainWidget(props) {
     return (
         <div className="
             absolute
@@ -15,7 +15,7 @@ function MainWidget() {
             gap-10
         ">
             <TimeClock />
-            <BackgroundPanel />
+            <BackgroundPanel image={props.image} />
             <FootHeader />
         </div>
     )

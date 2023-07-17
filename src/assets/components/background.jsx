@@ -1,14 +1,37 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-function Background() {
+function Background(props) {
+    const scale = props.scale ? props.scale : 1;
+    const [position, setPos] = useState({x: 0, y: 0})
+
+    useEffect(() => {
+        const handleMouseMove = (e) => {
+            const decrease = 20;
+    
+            const x = ((window.innerWidth / 2) - e.pageX) / decrease;
+            const y = ((window.innerHeight / 2) - e.pageY) / decrease;
+
+            setPos({x: x, y: y});
+        }
+
+        window.addEventListener('mousemove', handleMouseMove);
+
+        return () => {
+            window.removeEventListener('mousemove', handleMouseMove);
+        }
+    })
+
     return (
         <div className="
             bg-img
-            bg-[url('../wallpaper-images/128387.png')]
             w-full
             h-full
-            relative
-        "></div>
+            "
+            style={{
+                transform: `translate(${position.x}px, ${position.y}px) scale(${scale})`,
+                backgroundImage: `url(${props.image})`
+            }}
+        ></div>
     );
 }
 

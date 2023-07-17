@@ -5,15 +5,18 @@ import { ReactComponent as GameIcon } from "../icons/gamepad.svg";
 import { ReactComponent as CodeIcon } from "../icons/code.svg";
 import { ReactComponent as GearIcon } from "../icons/gear.svg";
 
-function BackgroundPanel() {
+function BackgroundPanel(props) {
     return (
         <div className="
             head-wallpaper
             bg-img
             z-10
             mx-auto
-            relative
-        ">
+            relative"
+            style={{
+                backgroundImage: `url(${props.image})`
+            }}
+        >
             <div className="
                 font-open-sans
                 text-white
