@@ -3,6 +3,18 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import WImage from "./assets/wallpaper-images/128387.png";
+
+let _wimage = WImage;
+
+function livelyPropertyListener (name, val) {
+  switch (name) {
+    case "bgImage":
+      _wimage = val;
+      break;
+  }
+}
+
 const prefixFunctionThatMade = () => {
   var sapa = "Hello";
 }
@@ -10,7 +22,7 @@ const prefixFunctionThatMade = () => {
 ReactDOM.createRoot(document.getElementById('root'))
   .render(
     <React.StrictMode>
-      <App />
+      <App wimage={_wimage} />
     </React.StrictMode>
   );
 

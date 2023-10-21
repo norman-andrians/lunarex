@@ -1,0 +1,22 @@
+{
+    "blurRadius": {
+      "max": 100,
+      "min": 1,
+      "tick": 100,
+      "text": "Blur Radius",
+      "type": "slider",
+      "value": 20
+    },
+    "bgImage": {
+      "type": "folderDropdown",
+      "value": "dirtywhite.jpg",
+      "text": "Background Image",
+      "filter": "*.jpg|*.png",
+      "folder": "background-images"
+    },
+    "darkMode": {
+      "type": "checkbox",
+      "value": true,
+      "text": "Dark Mode"
+    }
+  }

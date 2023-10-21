@@ -1,13 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Background from "./assets/components/background";
 import MainWidget from "./assets/components/widget";
 import "./assets/css/output.css";
 import "./assets/sass/main.scss";
 
-import WImage from "./assets/wallpaper-images/128387.png";
-
-export default function App() {
-    const wallpaperimg = WImage;
+export default function App({ wimage }) {
+    const wallpaperimg = wimage;
 
     return (
         <main
